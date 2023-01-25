@@ -3,7 +3,7 @@
 ### :muscle: Here is the final result:
 ![demo weather](https://user-images.githubusercontent.com/64718956/214505878-18c23c3c-2af3-4f8b-9468-7e884c347d9e.JPG)
 
-### :warning: This project has been developed taking reference from youtube channel of Parvat Computer technology and is only meant for learning purpose as this app uses Open Weather API which incurs certain cost whenever a search is made, hence, the API ID has been replaced with the original one. It is suggested to signup at "https://openweathermap.org/" for generating your own API. Reference video link: "https://www.youtube.com/watch?v=YbNWzyW_QF8&t=1088s"
+### :warning: This project has been developed taking reference from youtube channel of Parvat Computer technology and is only meant for learning purpose as this app uses Open Weather API which incurs certain cost whenever a search is made, hence, the original API key has been replaced with the current one. It is suggested to signup at "https://openweathermap.org/" for generating your own API key for use. Reference video link: "https://www.youtube.com/watch?v=YbNWzyW_QF8&t=1088s"
 
 ## :gift: Introduction:
 
@@ -28,6 +28,12 @@ pip install pytz
 pip install requests
 pip install pillow
 ```
+* Replace the existing API key with your generated API key at Line 36 in weather.py:
+  * Replace the existing API key( **appid=7ef98f0315a2e31567cff27b13a5e9f3** ) in below code line with your new generated API key: 
+```
+api="https://api.openweathermap.org/data/2.5/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=metric&exclude=hourly&appid=7ef98f0315a2e31567cff27b13a5e9f3"
+```
+   
 * Run weather.py file.
 
 
